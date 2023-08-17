@@ -1,7 +1,7 @@
 var destination = document.getElementById("container");
 
 /**Creating a component */
-var Buttonify = React.createClass({
+var Letter = React.createClass({
   render: function () {
     var letterStyle = {
       padding: 10,
@@ -14,14 +14,17 @@ var Buttonify = React.createClass({
       textAlign: "center",
     };
 
-    return <button style={letterStyle}>{this.props.behaviour}</button>;
+    return <div style={letterStyle}>{this.props.children}</div>;
   },
 });
 
 ReactDOM.render(
   <div>
-    <Buttonify behaviour="Submit" />
-    <Buttonify behaviour="Click me" />
+    <Letter>A</Letter>
+    <Letter>E</Letter>
+    <Letter>I</Letter>
+    <Letter>O</Letter>
+    <Letter>U</Letter>
   </div>,
   destination
 );
