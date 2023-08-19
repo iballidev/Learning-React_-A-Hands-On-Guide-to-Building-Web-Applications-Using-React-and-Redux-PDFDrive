@@ -1,0 +1,23 @@
+Meet the Lifecycle Methods
+Lifecycle methods are not very complicated. We can think of them as glorified event handlers 
+that get called at various points in a component’s life, and just like event handlers, you can 
+write some code to do things at those various points. Before we go further, it is time for you to 
+quickly meet our lifecycle methods. They are:
+
+ ■ componentWillMount
+ ■ componentDidMount
+ ■ componentWillUnmount
+ ■ componentWillUpdate
+ ■ componentDidUpdate
+ ■ shouldComponentUpdate
+ ■ componentWillReceiveProps
+
+ We aren’t quite done yet. There are three more methods that we are going to throw into the 
+mix even though they aren’t strictly lifecycle methods, and they are:
+ ■ getInitialState
+ ■ getDefaultProps
+ ■ render
+Some of these names probably sound familiar to you, and some you are probably seeing for the 
+first time. Don’t worry. By the end of all this, you’ll be on a first name basis with all of them! 
+What we are going to do is look at these lifecycle methods from various angles—starting with 
+some code!
